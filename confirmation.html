@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vérification des informations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h1>Vérification des informations</h1>
+        <p><strong>Nom :</strong> <span id="nom"></span></p>
+        <p><strong>Prénom :</strong> <span id="prenom"></span></p>
+        <p><strong>Date de naissance :</strong> <span id="dateNaissance"></span></p>
+        <p><strong>Email :</strong> <span id="email"></span></p>
+        <p><strong>Mot de passe :</strong> <span id="password"></span></p>
+
+        <button onclick="retourInscription()">Inscrire</button>
+    </section>
+
+    <script>
+        function retourInscription() {
+            window.location.href = "index.html"; // Redirection vers la page d'inscription
+        }
+    </script>
+</body>
+</html>
+
+

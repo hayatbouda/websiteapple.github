@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vérification du code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h1>Vérification du code</h1>
+        <p>Un code a été envoyé à votre email. Entrez-le ci-dessous.</p>
+        <input type="number" id="code" placeholder="Code reçu" required>
+        <button onclick="verifierCode()">Vérifier</button>
+    </section>
+
+    <script>
+        function verifierCode() {
+            let codeEntre = document.getElementById("code").value;
+            let codeStocke = localStorage.getItem("resetCode");
+
+            if (codeEntre == codeStocke) {
+                alert("Code correct !");
+                window.location.href = "index.html";
+            } else {
+                alert("Code incorrect, essayez encore.");
+            }
+        }
+    </script>
+</body>
+</html>

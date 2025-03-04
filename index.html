@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <form>
+            <h1>Login</h1>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" required>
+                <label>Mot de passe</label>
+            </div>
+            <div class="forget">
+                <a href="forgot-password.html">Mot de passe oublié ?</a>
+            </div>
+            <script type="module" src="https://unpkg.com/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule src="https://unpkg.com/@ionic/core/dist/ionic/ionic.js"></script>
+            <button type="submit">Se connecter</button>
+            <div class="register">
+                <p>Pas encore de compte ? <a href="registre.html">S'inscrire</a></p>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
